@@ -1,10 +1,6 @@
 <?php
 //Configuración de la conexión a la base de datos
-$host = 'localhost';
-$port = '5432';
-$dbname = 'formulario_db';
-$user = 'postgres';
-$password = 'root';
+require_once '../config.php';
 //Crear la conexión a la base de datos
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 //Si la conexión falla, mostrar un mensaje de error
